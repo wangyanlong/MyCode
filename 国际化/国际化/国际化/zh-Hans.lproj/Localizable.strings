@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  国际化
+
+  Created by wyl on 2017/6/2.
+  Copyright © 2017年 wyl. All rights reserved.
+*/
+
+"labelText" = "中文";
