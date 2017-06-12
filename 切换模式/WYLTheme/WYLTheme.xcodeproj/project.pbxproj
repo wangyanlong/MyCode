@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18173D771EEE92AE00EA2F01 /* UIButton+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 18173D761EEE92AE00EA2F01 /* UIButton+Theme.m */; };
+		18173D7A1EEE92C200EA2F01 /* WYLThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18173D791EEE92C200EA2F01 /* WYLThemeManager.m */; };
+		18173D861EEEA0C000EA2F01 /* WYLColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18173D851EEEA0C000EA2F01 /* WYLColor.m */; };
 		182533DA1EEA8CF200860D82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182533D91EEA8CF200860D82 /* main.m */; };
 		182533DD1EEA8CF200860D82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 182533DC1EEA8CF200860D82 /* AppDelegate.m */; };
 		182533E01EEA8CF200860D82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182533DF1EEA8CF200860D82 /* ViewController.m */; };
 		182533E31EEA8CF200860D82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182533E11EEA8CF200860D82 /* Main.storyboard */; };
 		182533E51EEA8CF200860D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 182533E41EEA8CF200860D82 /* Assets.xcassets */; };
 		182533E81EEA8CF200860D82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182533E61EEA8CF200860D82 /* LaunchScreen.storyboard */; };
+		18FF36B01EEED72600AA7904 /* NSObject+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36AF1EEED72600AA7904 /* NSObject+Theme.m */; };
+		18FF36B31EEEF33A00AA7904 /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36B21EEEF33A00AA7904 /* NSObject+DeallocBlock.m */; };
+		18FF36B61EEEF35100AA7904 /* WYLDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36B51EEEF35100AA7904 /* WYLDeallocBlockExecutor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18173D751EEE92AE00EA2F01 /* UIButton+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Theme.h"; sourceTree = "<group>"; };
+		18173D761EEE92AE00EA2F01 /* UIButton+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Theme.m"; sourceTree = "<group>"; };
+		18173D781EEE92C200EA2F01 /* WYLThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLThemeManager.h; sourceTree = "<group>"; };
+		18173D791EEE92C200EA2F01 /* WYLThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLThemeManager.m; sourceTree = "<group>"; };
+		18173D841EEEA0C000EA2F01 /* WYLColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLColor.h; sourceTree = "<group>"; };
+		18173D851EEEA0C000EA2F01 /* WYLColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLColor.m; sourceTree = "<group>"; };
 		182533D51EEA8CF200860D82 /* WYLTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYLTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		182533D91EEA8CF200860D82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		182533DB1EEA8CF200860D82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +38,12 @@
 		182533E41EEA8CF200860D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		182533E71EEA8CF200860D82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		182533E91EEA8CF200860D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FF36AE1EEED72600AA7904 /* NSObject+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Theme.h"; sourceTree = "<group>"; };
+		18FF36AF1EEED72600AA7904 /* NSObject+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Theme.m"; sourceTree = "<group>"; };
+		18FF36B11EEEF33A00AA7904 /* NSObject+DeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DeallocBlock.h"; sourceTree = "<group>"; };
+		18FF36B21EEEF33A00AA7904 /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
+		18FF36B41EEEF35100AA7904 /* WYLDeallocBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLDeallocBlockExecutor.h; sourceTree = "<group>"; };
+		18FF36B51EEEF35100AA7904 /* WYLDeallocBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLDeallocBlockExecutor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +57,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18173D731EEE92AE00EA2F01 /* WYLTheme */ = {
+			isa = PBXGroup;
+			children = (
+				18173D781EEE92C200EA2F01 /* WYLThemeManager.h */,
+				18173D791EEE92C200EA2F01 /* WYLThemeManager.m */,
+				18173D741EEE92AE00EA2F01 /* Category */,
+				18173D841EEEA0C000EA2F01 /* WYLColor.h */,
+				18173D851EEEA0C000EA2F01 /* WYLColor.m */,
+				18FF36B41EEEF35100AA7904 /* WYLDeallocBlockExecutor.h */,
+				18FF36B51EEEF35100AA7904 /* WYLDeallocBlockExecutor.m */,
+			);
+			path = WYLTheme;
+			sourceTree = "<group>";
+		};
+		18173D741EEE92AE00EA2F01 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				18173D751EEE92AE00EA2F01 /* UIButton+Theme.h */,
+				18173D761EEE92AE00EA2F01 /* UIButton+Theme.m */,
+				18FF36AE1EEED72600AA7904 /* NSObject+Theme.h */,
+				18FF36AF1EEED72600AA7904 /* NSObject+Theme.m */,
+				18FF36B11EEEF33A00AA7904 /* NSObject+DeallocBlock.h */,
+				18FF36B21EEEF33A00AA7904 /* NSObject+DeallocBlock.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		182533CC1EEA8CF200860D82 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +103,7 @@
 		182533D71EEA8CF200860D82 /* WYLTheme */ = {
 			isa = PBXGroup;
 			children = (
+				18173D731EEE92AE00EA2F01 /* WYLTheme */,
 				182533DB1EEA8CF200860D82 /* AppDelegate.h */,
 				182533DC1EEA8CF200860D82 /* AppDelegate.m */,
 				182533DE1EEA8CF200860D82 /* ViewController.h */,
@@ -151,9 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18FF36B01EEED72600AA7904 /* NSObject+Theme.m in Sources */,
 				182533E01EEA8CF200860D82 /* ViewController.m in Sources */,
+				18FF36B61EEEF35100AA7904 /* WYLDeallocBlockExecutor.m in Sources */,
 				182533DD1EEA8CF200860D82 /* AppDelegate.m in Sources */,
+				18173D861EEEA0C000EA2F01 /* WYLColor.m in Sources */,
+				18FF36B31EEEF33A00AA7904 /* NSObject+DeallocBlock.m in Sources */,
 				182533DA1EEA8CF200860D82 /* main.m in Sources */,
+				18173D7A1EEE92C200EA2F01 /* WYLThemeManager.m in Sources */,
+				18173D771EEE92AE00EA2F01 /* UIButton+Theme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +364,7 @@
 				182533EE1EEA8CF200860D82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
