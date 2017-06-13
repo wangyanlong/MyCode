@@ -23,7 +23,10 @@
 - (void)wyl_setTitleColorPicker:(WYLColorPicker)wyl_titleColorPicker{
     
     objc_setAssociatedObject(self, @selector(wyl_titleColorPicker), wyl_titleColorPicker, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    [self setTitleColor:wyl_titleColorPicker([WYLThemeManager shareManager].themeVersion) forState:UIControlStateNormal];
+    
+    UIColor *color = wyl_titleColorPicker([WYLThemeManager shareManager].themeVersion);
+    
+    [self setTitleColor:color forState:UIControlStateNormal];
     [self.pickers setValue:[wyl_titleColorPicker copy] forKey:@"setTitleColor:"];
 
 }

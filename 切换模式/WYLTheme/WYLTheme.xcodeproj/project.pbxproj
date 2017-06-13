@@ -19,6 +19,9 @@
 		18FF36B01EEED72600AA7904 /* NSObject+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36AF1EEED72600AA7904 /* NSObject+Theme.m */; };
 		18FF36B31EEEF33A00AA7904 /* NSObject+DeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36B21EEEF33A00AA7904 /* NSObject+DeallocBlock.m */; };
 		18FF36B61EEEF35100AA7904 /* WYLDeallocBlockExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36B51EEEF35100AA7904 /* WYLDeallocBlockExecutor.m */; };
+		18FF36BA1EEFB28A00AA7904 /* WYLColorTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FF36B91EEFB28A00AA7904 /* WYLColorTable.m */; };
+		18FF36BD1EEFB6DF00AA7904 /* DKColorTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18FF36BB1EEFB6DF00AA7904 /* DKColorTable.plist */; };
+		18FF36BE1EEFB6DF00AA7904 /* DKColorTable.txt in Resources */ = {isa = PBXBuildFile; fileRef = 18FF36BC1EEFB6DF00AA7904 /* DKColorTable.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,10 @@
 		18FF36B21EEEF33A00AA7904 /* NSObject+DeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DeallocBlock.m"; sourceTree = "<group>"; };
 		18FF36B41EEEF35100AA7904 /* WYLDeallocBlockExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLDeallocBlockExecutor.h; sourceTree = "<group>"; };
 		18FF36B51EEEF35100AA7904 /* WYLDeallocBlockExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLDeallocBlockExecutor.m; sourceTree = "<group>"; };
+		18FF36B81EEFB28A00AA7904 /* WYLColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLColorTable.h; sourceTree = "<group>"; };
+		18FF36B91EEFB28A00AA7904 /* WYLColorTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLColorTable.m; sourceTree = "<group>"; };
+		18FF36BB1EEFB6DF00AA7904 /* DKColorTable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DKColorTable.plist; sourceTree = "<group>"; };
+		18FF36BC1EEFB6DF00AA7904 /* DKColorTable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DKColorTable.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +67,11 @@
 		18173D731EEE92AE00EA2F01 /* WYLTheme */ = {
 			isa = PBXGroup;
 			children = (
+				18FF36BB1EEFB6DF00AA7904 /* DKColorTable.plist */,
+				18FF36BC1EEFB6DF00AA7904 /* DKColorTable.txt */,
 				18173D781EEE92C200EA2F01 /* WYLThemeManager.h */,
 				18173D791EEE92C200EA2F01 /* WYLThemeManager.m */,
+				18FF36B71EEFB26400AA7904 /* WYLColorTable */,
 				18173D741EEE92AE00EA2F01 /* Category */,
 				18173D841EEEA0C000EA2F01 /* WYLColor.h */,
 				18173D851EEEA0C000EA2F01 /* WYLColor.m */,
@@ -125,6 +135,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18FF36B71EEFB26400AA7904 /* WYLColorTable */ = {
+			isa = PBXGroup;
+			children = (
+				18FF36B81EEFB28A00AA7904 /* WYLColorTable.h */,
+				18FF36B91EEFB28A00AA7904 /* WYLColorTable.m */,
+			);
+			path = WYLColorTable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -186,6 +205,8 @@
 			files = (
 				182533E81EEA8CF200860D82 /* LaunchScreen.storyboard in Resources */,
 				182533E51EEA8CF200860D82 /* Assets.xcassets in Resources */,
+				18FF36BD1EEFB6DF00AA7904 /* DKColorTable.plist in Resources */,
+				18FF36BE1EEFB6DF00AA7904 /* DKColorTable.txt in Resources */,
 				182533E31EEA8CF200860D82 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +223,7 @@
 				18FF36B61EEEF35100AA7904 /* WYLDeallocBlockExecutor.m in Sources */,
 				182533DD1EEA8CF200860D82 /* AppDelegate.m in Sources */,
 				18173D861EEEA0C000EA2F01 /* WYLColor.m in Sources */,
+				18FF36BA1EEFB28A00AA7904 /* WYLColorTable.m in Sources */,
 				18FF36B31EEEF33A00AA7904 /* NSObject+DeallocBlock.m in Sources */,
 				182533DA1EEA8CF200860D82 /* main.m in Sources */,
 				18173D7A1EEE92C200EA2F01 /* WYLThemeManager.m in Sources */,

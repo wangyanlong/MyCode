@@ -45,6 +45,7 @@ static void *WYLViewDeallocHelperKey;
         [[NSNotificationCenter defaultCenter] removeObserver:self name:WYLVersionThemeChangingNotificaiton object:nil];
         
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(night_updateColor) name:WYLVersionThemeChangingNotificaiton object:nil];
+        
     }
     return pickers;
 }

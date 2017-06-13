@@ -12,6 +12,7 @@ NSString * const WYLThemeVersionNormal = @"NORMAL";
 NSString * const WYLThemeVersionNight = @"NIGHT";
 
 NSString * const WYLVersionCurrentThemeVersionKey = @"1";
+NSString * const WYLVersionThemeChangingNotificaiton = @"WYLVersionThemeChangingNotificaiton";
 
 @implementation WYLThemeManager
 
@@ -24,6 +25,7 @@ NSString * const WYLVersionCurrentThemeVersionKey = @"1";
         manager = [[WYLThemeManager alloc] init];
         WYLThemeVersion *themeVersion = [[NSUserDefaults standardUserDefaults] valueForKey:WYLVersionCurrentThemeVersionKey];
         themeVersion = themeVersion ?: WYLThemeVersionNormal;
+        themeVersion = WYLThemeVersionNight;
         manager.themeVersion = themeVersion;
     });
     
