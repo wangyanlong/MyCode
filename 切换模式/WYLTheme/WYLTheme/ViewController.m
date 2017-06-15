@@ -26,7 +26,7 @@
     self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [self.btn setTitle:@"测试切换模式" forState:UIControlStateNormal];
     self.btn.backgroundColor = [UIColor colorWithRed:(arc4random()%255/255.0) green:(arc4random()%255/255.0) blue:(arc4random()%255/255.0) alpha:1];
-    self.btn.wyl_titleColorPicker = WYLColorPickerWithKey(TINT);
+    [self.btn wyl_setTitleColorPicker:WYLColorPickerWithKey(TINT) forState:UIControlStateNormal];
     [self.btn addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
     self.btn.frame = CGRectMake(50, 100, 300, 100);
     [self.view addSubview:self.btn];
@@ -35,9 +35,8 @@
 
 - (void)click:(UIButton *)sender{
     
-    self.btn.wyl_titleColorPicker = WYLColorPickerWithKey(BG);
+    [WYLThemeManager shareManager].themeVersion = @"NORMAL";
 
-    
 }
 
 - (void)didReceiveMemoryWarning {

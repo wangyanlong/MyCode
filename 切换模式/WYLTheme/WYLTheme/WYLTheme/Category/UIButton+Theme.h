@@ -12,7 +12,7 @@
 
 @interface UIButton (Theme)
 
-@property (nonatomic, copy, setter = wyl_setTitleColorPicker:) WYLColorPicker wyl_titleColorPicker;
+- (void)wyl_setTitleColorPicker:(WYLColorPicker)picker forState:(UIControlState)state;
 
 
 @end
