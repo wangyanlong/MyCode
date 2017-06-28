@@ -13,6 +13,9 @@
 		18FB19551F0355780000DF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FB19531F0355780000DF26 /* Main.storyboard */; };
 		18FB19571F0355780000DF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FB19561F0355780000DF26 /* Assets.xcassets */; };
 		18FB195A1F0355780000DF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FB19581F0355780000DF26 /* LaunchScreen.storyboard */; };
+		18FB19631F0372630000DF26 /* MyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB19621F0372630000DF26 /* MyURLProtocol.m */; };
+		18FB19651F037B450000DF26 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FB19641F037B450000DF26 /* 1.png */; };
+		18FB19681F037EC20000DF26 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FB19671F037EC20000DF26 /* ViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		18FB19561F0355780000DF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18FB19591F0355780000DF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18FB195B1F0355780000DF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FB19611F0372630000DF26 /* MyURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyURLProtocol.h; path = ../MyURLProtocol.h; sourceTree = "<group>"; };
+		18FB19621F0372630000DF26 /* MyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyURLProtocol.m; path = ../MyURLProtocol.m; sourceTree = "<group>"; };
+		18FB19641F037B450000DF26 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		18FB19661F037EC20000DF26 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		18FB19671F037EC20000DF26 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +66,15 @@
 		18FB19491F0355780000DF26 /* NSURLProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				18FB19641F037B450000DF26 /* 1.png */,
+				18FB19611F0372630000DF26 /* MyURLProtocol.h */,
+				18FB19621F0372630000DF26 /* MyURLProtocol.m */,
 				18FB194D1F0355780000DF26 /* AppDelegate.h */,
 				18FB194E1F0355780000DF26 /* AppDelegate.m */,
 				18FB19501F0355780000DF26 /* ViewController.h */,
 				18FB19511F0355780000DF26 /* ViewController.m */,
+				18FB19661F037EC20000DF26 /* ViewController2.h */,
+				18FB19671F037EC20000DF26 /* ViewController2.m */,
 				18FB19531F0355780000DF26 /* Main.storyboard */,
 				18FB19561F0355780000DF26 /* Assets.xcassets */,
 				18FB19581F0355780000DF26 /* LaunchScreen.storyboard */,
@@ -139,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FB195A1F0355780000DF26 /* LaunchScreen.storyboard in Resources */,
+				18FB19651F037B450000DF26 /* 1.png in Resources */,
 				18FB19571F0355780000DF26 /* Assets.xcassets in Resources */,
 				18FB19551F0355780000DF26 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FB19521F0355780000DF26 /* ViewController.m in Sources */,
+				18FB19631F0372630000DF26 /* MyURLProtocol.m in Sources */,
+				18FB19681F037EC20000DF26 /* ViewController2.m in Sources */,
 				18FB194F1F0355780000DF26 /* AppDelegate.m in Sources */,
 				18FB194C1F0355780000DF26 /* main.m in Sources */,
 			);
