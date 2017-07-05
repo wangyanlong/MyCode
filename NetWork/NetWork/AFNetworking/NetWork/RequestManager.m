@@ -58,10 +58,77 @@
     
     NSMutableURLRequest *request;
     
-//    request = [self.]
+    request = [self.requestManager.requestSerializer requestWithMethod:method URLString:urlString parameters:parameters error:nil];
+    
+    AFHTTPRequestOperation *operation = [self createOperationWithRequest:request];
+    
+    if (!startImmediately) {//不开启任务
+        
+        NSMutableDictionary *methodParameters = [NSMutableDictionary dictionaryWithObjectsAndKeys:method,@"method" ,nil];
+        if (urlString) {
+            [methodParameters setObject:urlString forKey:@"URLString"];
+        }
+        if (parameters) {
+            [methodParameters setObject:parameters forKey:@"parameters"];
+        }
+        
+        if (resultCacheDuration) {
+            [methodParameters setObject:@(resultCacheDuration) forKey:@"resultCacheDuration"];
+        }
+        
+        if (ignoreCache) {
+            [methodParameters setObject:@(ignoreCache) forKey:@"ignoreCache"];
+        }
+        
+        if (completionHandler) {
+            [methodParameters setObject:completionHandler forKey:@"completionHandler"];
+        }
+        
+        //NSMapTable可以弱引用
+        [self.operationMethodParameters setObject:methodParameters forKey:operation];
+        
+        return operation;
+    }
+    
+    NSString *urlKey = [NSString cacheFileKeyNameWithUrlstring:urlString method:method parameters:parameters];
+    
+    if ([self checkIfShouldSkipCacheFileWithCacheDuration:resultCacheDuration cacheKey:urlKey]) {
+        
+    }
     
     return nil;
     
+}
+
+- (AFHTTPRequestOperation *)createOperationWithRequest:(NSURLRequest *)request{
+    
+    return [[AFHTTPRequestOperation alloc] initWithRequest:request];
+
+}
+
+//判断是不是需要跳过缓存数据
+-(BOOL)checkIfShouldSkipCacheFileWithCacheDuration:(NSTimeInterval)resultCacheDuration cacheKey:(NSString*)urlkey{
+    
+    if (resultCacheDuration == 0) {//如果不需要缓存
+        return YES;
+    }
+    
+//    id result = 
+    return YES;
+}
+
+- (AFHTTPRequestOperationManager *)requestManager{
+    
+    if (!_requestManager) {
+        
+        _requestManager = [AFHTTPRequestOperationManager manager];
+        _requestManager.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
+        _requestManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html", @"text/json", @"text/javascript",@"text/plain", nil];
+        _requestManager.requestSerializer.timeoutInterval = 30;
+        
+    }
+    
+    return _requestManager;
 }
 
 @end

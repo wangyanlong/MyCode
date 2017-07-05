@@ -10,4 +10,7 @@
 
 @interface NSString (HttpResponce)
 
++ (NSString *)appVersionString;
++ (NSString *)cacheFileKeyNameWithUrlstring:(NSString* )urlString method:(NSString*)method parameters:(NSDictionary *)parameters;
+
 @end
