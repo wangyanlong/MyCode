@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181F5DE81F0C916800C18E6B /* RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F5DE71F0C916800C18E6B /* RequestManager.m */; };
+		181F5DEB1F0CB63500C18E6B /* NSString+HttpResponce.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F5DEA1F0CB63500C18E6B /* NSString+HttpResponce.m */; };
+		181F5DEE1F0CB6CF00C18E6B /* MYNSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F5DED1F0CB6CF00C18E6B /* MYNSError.m */; };
+		181F5DF11F0CBBAB00C18E6B /* HttpResponceCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 181F5DF01F0CBBAB00C18E6B /* HttpResponceCache.m */; };
 		18EF30FE1F0BF1D600BF788D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF30FD1F0BF1D600BF788D /* main.m */; };
 		18EF31011F0BF1D600BF788D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF31001F0BF1D600BF788D /* AppDelegate.m */; };
 		18EF31041F0BF1D600BF788D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF31031F0BF1D600BF788D /* ViewController.m */; };
@@ -35,6 +39,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181F5DE61F0C916800C18E6B /* RequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestManager.h; sourceTree = "<group>"; };
+		181F5DE71F0C916800C18E6B /* RequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestManager.m; sourceTree = "<group>"; };
+		181F5DE91F0CB63500C18E6B /* NSString+HttpResponce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+HttpResponce.h"; path = "../../NetWork/NSString+HttpResponce.h"; sourceTree = "<group>"; };
+		181F5DEA1F0CB63500C18E6B /* NSString+HttpResponce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+HttpResponce.m"; path = "../../NetWork/NSString+HttpResponce.m"; sourceTree = "<group>"; };
+		181F5DEC1F0CB6CF00C18E6B /* MYNSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MYNSError.h; path = ../../NetWork/NetWork/MYNSError.h; sourceTree = "<group>"; };
+		181F5DED1F0CB6CF00C18E6B /* MYNSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MYNSError.m; path = ../../NetWork/NetWork/MYNSError.m; sourceTree = "<group>"; };
+		181F5DEF1F0CBBAB00C18E6B /* HttpResponceCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpResponceCache.h; path = ../../NetWork/NetWork/HttpResponceCache.h; sourceTree = "<group>"; };
+		181F5DF01F0CBBAB00C18E6B /* HttpResponceCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HttpResponceCache.m; path = ../../NetWork/NetWork/HttpResponceCache.m; sourceTree = "<group>"; };
 		18EF30F91F0BF1D600BF788D /* NetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EF30FD1F0BF1D600BF788D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18EF30FF1F0BF1D600BF788D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,9 +109,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181F5DE51F0C916800C18E6B /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				181F5DEC1F0CB6CF00C18E6B /* MYNSError.h */,
+				181F5DED1F0CB6CF00C18E6B /* MYNSError.m */,
+				181F5DEF1F0CBBAB00C18E6B /* HttpResponceCache.h */,
+				181F5DF01F0CBBAB00C18E6B /* HttpResponceCache.m */,
+				181F5DE91F0CB63500C18E6B /* NSString+HttpResponce.h */,
+				181F5DEA1F0CB63500C18E6B /* NSString+HttpResponce.m */,
+				181F5DE61F0C916800C18E6B /* RequestManager.h */,
+				181F5DE71F0C916800C18E6B /* RequestManager.m */,
+			);
+			name = NetWork;
+			path = AFNetworking/NetWork;
+			sourceTree = "<group>";
+		};
 		18EF30F01F0BF1D500BF788D = {
 			isa = PBXGroup;
 			children = (
+				181F5DE51F0C916800C18E6B /* NetWork */,
 				18EF31131F0BF1E700BF788D /* AFNetworking */,
 				18EF30FB1F0BF1D600BF788D /* NetWork */,
 				18EF30FA1F0BF1D600BF788D /* Products */,
@@ -273,14 +302,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181F5DEB1F0CB63500C18E6B /* NSString+HttpResponce.m in Sources */,
 				18EF314D1F0BF1E800BF788D /* UIProgressView+AFNetworking.m in Sources */,
 				18EF314B1F0BF1E800BF788D /* UIButton+AFNetworking.m in Sources */,
 				18EF314E1F0BF1E800BF788D /* UIRefreshControl+AFNetworking.m in Sources */,
 				18EF314A1F0BF1E800BF788D /* UIAlertView+AFNetworking.m in Sources */,
 				18EF313D1F0BF1E700BF788D /* AFHTTPRequestOperation.m in Sources */,
 				18EF31041F0BF1D600BF788D /* ViewController.m in Sources */,
+				181F5DEE1F0CB6CF00C18E6B /* MYNSError.m in Sources */,
 				18EF313E1F0BF1E700BF788D /* AFHTTPRequestOperationManager.m in Sources */,
+				181F5DE81F0C916800C18E6B /* RequestManager.m in Sources */,
 				18EF31401F0BF1E700BF788D /* AFNetworkReachabilityManager.m in Sources */,
+				181F5DF11F0CBBAB00C18E6B /* HttpResponceCache.m in Sources */,
 				18EF31471F0BF1E700BF788D /* README.md in Sources */,
 				18EF314C1F0BF1E800BF788D /* UIImageView+AFNetworking.m in Sources */,
 				18EF31441F0BF1E700BF788D /* AFURLResponseSerialization.m in Sources */,
@@ -452,6 +485,7 @@
 				18EF31121F0BF1D600BF788D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
