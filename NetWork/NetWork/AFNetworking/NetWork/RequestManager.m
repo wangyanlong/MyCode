@@ -92,8 +92,16 @@
     
     NSString *urlKey = [NSString cacheFileKeyNameWithUrlstring:urlString method:method parameters:parameters];
     
-    if ([self checkIfShouldSkipCacheFileWithCacheDuration:resultCacheDuration cacheKey:urlKey]) {
+    if ([self checkIfShouldSkipCacheFileWithCacheDuration:resultCacheDuration cacheKey:urlKey] || ignoreCache) {
+    configOperation:
         
+        [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+           
+            //[self hand]
+            
+        } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
+            
+        }];
     }
     
     return nil;
