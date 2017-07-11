@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "AFNetworking.h"
-
+#import "RequestManager.h"
 @interface ViewController ()
 
 @end
@@ -36,6 +36,17 @@
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     [parameters setObject:@"1" forKey:@"versions_id"];
     [parameters setObject:@"1" forKey:@"system_type"];
+    
+    [[RequestManager sharedInstance]httpRequestWithMethod:@"POST" urlString:urlStr parameters:parameters startImmediately:YES ignoreCache:NO resultCacheDuration:3 completionHandler:^(MYNSError * _Nonnull error, id  _Nonnull result, BOOL isFromCache, AFHTTPRequestOperation * _Nonnull operation) {
+       
+        if (error) {
+            NSLog(@"%@", error);
+        }else{
+            
+            NSLog(@"%@", result);
+        }
+        
+    }];
     
 }
 

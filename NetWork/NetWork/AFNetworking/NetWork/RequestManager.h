@@ -10,6 +10,7 @@
 #import "AFNetworking.h"
 #import "MYNSError.h"
 #import "NSString+HttpResponce.h"
+#import "HttpResponceCache.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

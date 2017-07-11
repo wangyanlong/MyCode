@@ -51,7 +51,6 @@
         method = @"POST";
     }
     
-#warning 为什么这么写?
     if (parameters) {
         parameters = parameters.mutableCopy;
     }
@@ -97,15 +96,105 @@
         
         [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
            
-            //[self hand]
+            [self handleResponseWithOperation:operation result:responseObject isCache:NO completionHandler:completionHandler];
+            
+            if (resultCacheDuration > 0) {// 如果使用缓存，就把结果放到缓存中方便下次使用
+                
+                NSString *urlKey = [NSString cacheFileKeyNameWithUrlstring:urlString method:method parameters:parameters];
+                [self.cache setObject:responseObject forKey:urlKey];
+                
+            }
             
         } failure:^(AFHTTPRequestOperation * _Nonnull operation, NSError * _Nonnull error) {
             
+            if (error.code != NSURLErrorCancelled) {
+                [self handleResponseWithOperation:operation result:error isCache:NO completionHandler:completionHandler];
+            }
+            
         }];
+        
+        [self.requestManager.operationQueue addOperation:operation];
+    }else
+    { // AF
+        id result = [self.cache objectForKey:urlKey];
+        if (result) {//如果需要使用缓存则判断缓存是不是存在，不存在的话这继续获取新的数据
+            [self handleResponseWithOperation:operation result:result isCache:YES completionHandler:completionHandler];
+        }
+        else
+        {
+            goto configOperation;
+        }
     }
     
     return nil;
     
+}
+
+//对request的 响应 进行一些处理
+- (void)handleResponseWithOperation:(AFHTTPRequestOperation*)operation
+                             result:(id)responseObject//有错误把错误的实例作为参数，没有错误就把返回数据作为参数
+                            isCache:(BOOL)isCache
+                  completionHandler:(RequestCompletionHandler)completionHandler{
+    
+    MYNSError *error = nil;
+    id result = nil;
+    
+    if ([responseObject isKindOfClass:[NSError class]]) {
+        
+        error = [MYNSError new];
+        error.errorCode = @"404";
+        error.errorDescription = @"网络异常";
+        error.sysError = responseObject;
+        
+    }else{
+        
+        result = [self decodeResponseObject:responseObject error:&error];
+        if (result == [NSNull null]) {
+            result = nil;
+        }
+        
+    }
+    
+    if (completionHandler) {
+        
+        if ([result isKindOfClass:[NSDictionary class]])
+        {
+            int temp = [[result objectForKey:@"code"] intValue];
+            // 统一处理特定的错误
+            if (temp == 999 || temp == 998 || temp == 209)
+            {
+                if (!error)
+                    error = [MYNSError new];
+                error.errorCode = [result objectForKey:@"code"];
+                error.errorDescription = [result objectForKey:@"msg"];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"loginOutNotification" object:nil];
+            }
+        }
+        else
+        {
+            if (!error)
+                error = [MYNSError new];
+            error.errorCode = @"404";
+            error.errorDescription = @"网络连接失败,请检查网络";
+        }
+        completionHandler(error,result,isCache,operation);
+        
+    }
+    
+}
+
+// 对响应结果做处理 格式
+- (id)decodeResponseObject:(id)responseObject error:(MYNSError **)error
+{
+    if ([responseObject isKindOfClass:[NSData class]])
+    {
+        return [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingMutableLeaves error:nil];
+    }
+    else if([responseObject isKindOfClass:[NSDictionary class]])
+    {
+        return responseObject;
+    }
+    return nil;
 }
 
 - (AFHTTPRequestOperation *)createOperationWithRequest:(NSURLRequest *)request{
