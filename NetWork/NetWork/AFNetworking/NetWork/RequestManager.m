@@ -209,10 +209,20 @@
     if (resultCacheDuration == 0) {//如果不需要缓存
         return YES;
     }
+
+    //处理缓存
+    id result = [self.cache objectForKey:urlkey]; // 返回缓存
+
+    if (result) {//如果有缓存判断实效性
+        if ([self.cache expiredWithCacheKey:urlkey cacheDuration:resultCacheDuration]) { //如果存在，判断缓存文件是否过期了
+            return YES;
+        }
+    }else{
+        return YES;
+    }
     
     
-    
-    return YES;
+    return NO;
 }
 
 - (AFHTTPRequestOperationManager *)requestManager{
