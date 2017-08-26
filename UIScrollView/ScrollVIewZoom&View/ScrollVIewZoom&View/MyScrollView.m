@@ -39,7 +39,7 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    NSLog(@"%f",scrollView.contentOffset.y);
+    NSLog(@"%@",NSStringFromCGRect(self.contentView.frame));
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView{
