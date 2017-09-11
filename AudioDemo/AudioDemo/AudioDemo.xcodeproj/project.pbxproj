@@ -13,6 +13,11 @@
 		1839943D1F62BB52004BD71C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1839943B1F62BB52004BD71C /* Main.storyboard */; };
 		1839943F1F62BB52004BD71C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1839943E1F62BB52004BD71C /* Assets.xcassets */; };
 		183994421F62BB52004BD71C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183994401F62BB52004BD71C /* LaunchScreen.storyboard */; };
+		1848805E1F6667DC00EF2CE3 /* MP3Sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1848805D1F6667DC00EF2CE3 /* MP3Sample.mp3 */; };
+		184880611F666CD400EF2CE3 /* WYLAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 184880601F666CD400EF2CE3 /* WYLAudioSession.m */; };
+		184880641F666CF700EF2CE3 /* WYLAudioStreamParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 184880631F666CF700EF2CE3 /* WYLAudioStreamParse.m */; };
+		184880671F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 184880661F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m */; };
+		1848806A1F666D1E00EF2CE3 /* WYLAudioQueueRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 184880691F666D1E00EF2CE3 /* WYLAudioQueueRead.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		1839943E1F62BB52004BD71C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183994411F62BB52004BD71C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183994431F62BB52004BD71C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1848805D1F6667DC00EF2CE3 /* MP3Sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MP3Sample.mp3; sourceTree = "<group>"; };
+		1848805F1F666CD400EF2CE3 /* WYLAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLAudioSession.h; sourceTree = "<group>"; };
+		184880601F666CD400EF2CE3 /* WYLAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLAudioSession.m; sourceTree = "<group>"; };
+		184880621F666CF700EF2CE3 /* WYLAudioStreamParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLAudioStreamParse.h; sourceTree = "<group>"; };
+		184880631F666CF700EF2CE3 /* WYLAudioStreamParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLAudioStreamParse.m; sourceTree = "<group>"; };
+		184880651F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLAudioStreamPacketBuffersPool.h; sourceTree = "<group>"; };
+		184880661F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLAudioStreamPacketBuffersPool.m; sourceTree = "<group>"; };
+		184880681F666D1E00EF2CE3 /* WYLAudioQueueRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYLAudioQueueRead.h; sourceTree = "<group>"; };
+		184880691F666D1E00EF2CE3 /* WYLAudioQueueRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLAudioQueueRead.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +72,19 @@
 		183994311F62BB52004BD71C /* AudioDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1848805D1F6667DC00EF2CE3 /* MP3Sample.mp3 */,
 				183994351F62BB52004BD71C /* AppDelegate.h */,
 				183994361F62BB52004BD71C /* AppDelegate.m */,
 				183994381F62BB52004BD71C /* ViewController.h */,
 				183994391F62BB52004BD71C /* ViewController.m */,
+				1848805F1F666CD400EF2CE3 /* WYLAudioSession.h */,
+				184880601F666CD400EF2CE3 /* WYLAudioSession.m */,
+				184880621F666CF700EF2CE3 /* WYLAudioStreamParse.h */,
+				184880631F666CF700EF2CE3 /* WYLAudioStreamParse.m */,
+				184880651F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.h */,
+				184880661F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m */,
+				184880681F666D1E00EF2CE3 /* WYLAudioQueueRead.h */,
+				184880691F666D1E00EF2CE3 /* WYLAudioQueueRead.m */,
 				1839943B1F62BB52004BD71C /* Main.storyboard */,
 				1839943E1F62BB52004BD71C /* Assets.xcassets */,
 				183994401F62BB52004BD71C /* LaunchScreen.storyboard */,
@@ -139,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				183994421F62BB52004BD71C /* LaunchScreen.storyboard in Resources */,
+				1848805E1F6667DC00EF2CE3 /* MP3Sample.mp3 in Resources */,
 				1839943F1F62BB52004BD71C /* Assets.xcassets in Resources */,
 				1839943D1F62BB52004BD71C /* Main.storyboard in Resources */,
 			);
@@ -152,8 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1839943A1F62BB52004BD71C /* ViewController.m in Sources */,
+				184880671F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m in Sources */,
 				183994371F62BB52004BD71C /* AppDelegate.m in Sources */,
+				184880611F666CD400EF2CE3 /* WYLAudioSession.m in Sources */,
+				184880641F666CF700EF2CE3 /* WYLAudioStreamParse.m in Sources */,
 				183994341F62BB52004BD71C /* main.m in Sources */,
+				1848806A1F666D1E00EF2CE3 /* WYLAudioQueueRead.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +340,7 @@
 				183994481F62BB52004BD71C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
