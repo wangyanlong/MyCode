@@ -26,6 +26,8 @@
 @property (nonatomic, strong)WYLAudioStreamPacketBuffersPool *wylBuffersPool;//音频缓冲池
 @property (nonatomic, strong)WYLAudioQueueRead *wylAudioQueueRead;//音频读取
 
+@property (nonatomic, assign) BOOL  playing;
+
 @end
 
 @implementation ViewController
@@ -50,6 +52,56 @@
 }
 
 - (void)audioThreadMethod{
+    
+    //建立会话
+    BOOL isSuccess = [self.wylAudioSession wylAVAudioSessionAction:YES];
+    
+    if (!isSuccess) {
+        return;
+    }
+    
+    isSuccess = [self.wylAudioSession configAVAudioSessionCategory:AVAudioSessionCategoryAmbient];
+    if (!isSuccess) {
+        return;
+    }
+    
+    BOOL isEOF = NO;
+    
+    while (_fileSize > 0) {
+    
+        // 2 读音频文件 500字节
+        NSData *data = nil;
+        if (!isEOF) {
+            
+            data = [_fileHandle readDataOfLength:500];
+            
+            _fileOffset += data.length;
+            
+            if (_fileOffset >= _fileSize) {
+                isEOF = YES;
+                NSLog(@"finish EOF");
+            }
+            
+        }
+        
+        if (_playing && data) {
+        
+            // 3. 解析
+            isSuccess = [self.wylAudioStreamParse parserAudioStream:data];
+            if (!isSuccess) {
+                NSLog(@"解析数据出问题了");
+                break;
+            }
+            
+        }
+        
+    }
+
+}
+
+- (void)wylAudioStreamParseForPackets:(NSArray *)packetAry{
+    
+    
     
 }
 

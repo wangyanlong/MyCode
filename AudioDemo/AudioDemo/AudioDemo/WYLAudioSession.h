@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface WYLAudioSession : NSObject
+
+- (BOOL)wylAVAudioSessionAction:(BOOL)active;
+- (BOOL)configAVAudioSessionCategory:(NSString *)category;
 
 @end
