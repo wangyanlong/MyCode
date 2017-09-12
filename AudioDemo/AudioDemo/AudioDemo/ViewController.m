@@ -93,7 +93,16 @@
                 break;
             }
             
-            //
+            // 5 读数据（从缓冲区里读）
+            // 5.1 需要判断是否已经解析完文件头
+            if ([self.wylAudioStreamParse isReadyProductPacket]) {
+                
+                //5.2 读音频数据
+                if (!self.wylAudioQueueRead.audioQueue){
+                    
+                }
+                
+            }
             
         }
         
@@ -101,6 +110,7 @@
 
 }
 
+// 4 数据缓存区
 - (void)wylAudioStreamParseForPackets:(NSArray *)packetAry{
     
     [self.wylBuffersPool enqueuePoolStreamPacketsAry:packetAry];

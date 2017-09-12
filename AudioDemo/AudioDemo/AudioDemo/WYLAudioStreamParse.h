@@ -42,7 +42,7 @@
  @return 返回实例
  */
 - (instancetype)initWithFile:(AudioFileTypeID)fileType filezize:(UInt32)filesize;
-
+- (BOOL)isReadyProductPacket;
 - (BOOL)parserAudioStream:(NSData *)data;
 - (void)handleAudioFileStream_PropertyListenerProc:(AudioFileStreamPropertyID)inPropertyID;
 - (void)handleAudioFileStream_PacketsProc:(UInt32)inNumberBytes Packets:(UInt32)inNumberPackets PacketData:(NSData*)packetData PacketDescription:(AudioStreamPacketDescription*)inPacketDescriptions;

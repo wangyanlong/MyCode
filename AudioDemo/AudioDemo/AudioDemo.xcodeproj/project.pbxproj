@@ -19,6 +19,7 @@
 		184880671F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 184880661F666D1100EF2CE3 /* WYLAudioStreamPacketBuffersPool.m */; };
 		1848806A1F666D1E00EF2CE3 /* WYLAudioQueueRead.m in Sources */ = {isa = PBXBuildFile; fileRef = 184880691F666D1E00EF2CE3 /* WYLAudioQueueRead.m */; };
 		1848806D1F67B5E100EF2CE3 /* AudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848806C1F67B5E100EF2CE3 /* AudioModel.m */; };
+		184880701F67D9CA00EF2CE3 /* AudioQueueReadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1848806F1F67D9CA00EF2CE3 /* AudioQueueReadModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		184880691F666D1E00EF2CE3 /* WYLAudioQueueRead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYLAudioQueueRead.m; sourceTree = "<group>"; };
 		1848806B1F67B5E100EF2CE3 /* AudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioModel.h; sourceTree = "<group>"; };
 		1848806C1F67B5E100EF2CE3 /* AudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioModel.m; sourceTree = "<group>"; };
+		1848806E1F67D9CA00EF2CE3 /* AudioQueueReadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioQueueReadModel.h; sourceTree = "<group>"; };
+		1848806F1F67D9CA00EF2CE3 /* AudioQueueReadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioQueueReadModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 			children = (
 				1848806B1F67B5E100EF2CE3 /* AudioModel.h */,
 				1848806C1F67B5E100EF2CE3 /* AudioModel.m */,
+				1848806E1F67D9CA00EF2CE3 /* AudioQueueReadModel.h */,
+				1848806F1F67D9CA00EF2CE3 /* AudioQueueReadModel.m */,
 				1848805D1F6667DC00EF2CE3 /* MP3Sample.mp3 */,
 				183994351F62BB52004BD71C /* AppDelegate.h */,
 				183994361F62BB52004BD71C /* AppDelegate.m */,
@@ -185,6 +190,7 @@
 				1848806D1F67B5E100EF2CE3 /* AudioModel.m in Sources */,
 				183994371F62BB52004BD71C /* AppDelegate.m in Sources */,
 				184880611F666CD400EF2CE3 /* WYLAudioSession.m in Sources */,
+				184880701F67D9CA00EF2CE3 /* AudioQueueReadModel.m in Sources */,
 				184880641F666CF700EF2CE3 /* WYLAudioStreamParse.m in Sources */,
 				183994341F62BB52004BD71C /* main.m in Sources */,
 				1848806A1F666D1E00EF2CE3 /* WYLAudioQueueRead.m in Sources */,
