@@ -93,6 +93,8 @@
                 break;
             }
             
+            //
+            
         }
         
     }
@@ -101,7 +103,7 @@
 
 - (void)wylAudioStreamParseForPackets:(NSArray *)packetAry{
     
-    
+    [self.wylBuffersPool enqueuePoolStreamPacketsAry:packetAry];
     
 }
 
