@@ -37,6 +37,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"MP3Sample" ofType:@"mp3"];
+    _fileHandle = [NSFileHandle fileHandleForReadingAtPath:filePath];
+
     _fileSize = [[[NSFileManager defaultManager] attributesOfItemAtPath:filePath error:nil] fileSize];
     _fileOffset = 0;
     _bufferSize = _fileSize/500.0f;
@@ -44,11 +46,13 @@
     self.audioThread = [[NSThread alloc] initWithTarget:self selector:@selector(audioThreadMethod) object:nil];
     
     self.wylAudioSession = [[WYLAudioSession alloc] init];
-    self.wylAudioStreamParse = [[WYLAudioStreamParse alloc] init];
+    self.wylAudioStreamParse = [[WYLAudioStreamParse alloc] initWithFile:kAudioFileMP3Type filezize:(UInt32)_fileSize];
     self.wylAudioStreamParse.delegate = self;
     self.wylBuffersPool = [[WYLAudioStreamPacketBuffersPool alloc] init];
     self.wylAudioQueueRead = [[WYLAudioQueueRead alloc] init];
     
+    _playing = YES;
+    [self.audioThread start];
 }
 
 - (void)audioThreadMethod{
@@ -99,6 +103,37 @@
                 
                 //5.2 读音频数据
                 if (!self.wylAudioQueueRead.audioQueue){
+                    isSuccess = [self.wylAudioQueueRead createQueue:self.wylAudioStreamParse.audioStreamBasicDescription bufferSize:(UInt32)_bufferSize];
+                    
+                    if (!isSuccess) {
+                        NSLog(@"createQueue出问题了");
+                        break;
+                    }
+                    
+                }
+                
+                // 从缓冲区里读
+                if (self.wylBuffersPool.bufferSize < _bufferSize) {
+                    // pool数据不够，那么继续解析文件数据
+                    continue;
+                }
+                
+                UInt32 packetCount = 0;
+                AudioStreamPacketDescription *packetDescription;
+                
+                NSData *streamData = [self.wylBuffersPool dequeuePoolStreamPacketDataSize:(UInt32)_bufferSize packetCount:&packetCount audioStreamPacketDescription:&packetDescription];
+                
+                if (streamData) {
+                    isSuccess = [self.wylAudioQueueRead playerAudioQueue:streamData numPackets:packetCount packetDescription:packetDescription];
+                    if (!isSuccess) {
+                        NSLog(@"playerAudioQueue fail");
+                        break;
+                    }
+                    
+                }else {
+                    
+                    NSLog(@"dequeuePoolStream fail");
+                    break;
                     
                 }
                 
