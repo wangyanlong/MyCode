@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18AE190D1E40F73B00EE3DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE190C1E40F73B00EE3DC5 /* main.m */; };
+		18AE19101E40F73B00EE3DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE190F1E40F73B00EE3DC5 /* AppDelegate.m */; };
+		18AE19131E40F73B00EE3DC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE19121E40F73B00EE3DC5 /* ViewController.m */; };
+		18AE19161E40F73B00EE3DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AE19141E40F73B00EE3DC5 /* Main.storyboard */; };
+		18AE19181E40F73B00EE3DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AE19171E40F73B00EE3DC5 /* Assets.xcassets */; };
+		18AE191B1E40F73B00EE3DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AE19191E40F73B00EE3DC5 /* LaunchScreen.storyboard */; };
+		18AE19241E40F99B00EE3DC5 /* ViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AE19231E40F99B00EE3DC5 /* ViewController+Swizzling.m */; };
+		9EB25111DC8B5ADBD3E850DE /* libPods--Swizzling.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E7A1327453F21AB26A1F43 /* libPods--Swizzling.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		18AE19081E40F73B00EE3DC5 /* Swizzling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swizzling.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AE190C1E40F73B00EE3DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18AE190E1E40F73B00EE3DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		18AE190F1E40F73B00EE3DC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		18AE19111E40F73B00EE3DC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		18AE19121E40F73B00EE3DC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18AE19151E40F73B00EE3DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18AE19171E40F73B00EE3DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18AE191A1E40F73B00EE3DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18AE191C1E40F73B00EE3DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AE19221E40F99B00EE3DC5 /* ViewController+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+Swizzling.h"; sourceTree = "<group>"; };
+		18AE19231E40F99B00EE3DC5 /* ViewController+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+Swizzling.m"; sourceTree = "<group>"; };
+		9670C99D51A63DCD783490C7 /* Pods--Swizzling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods--Swizzling.debug.xcconfig"; path = "Pods/Target Support Files/Pods--Swizzling/Pods--Swizzling.debug.xcconfig"; sourceTree = "<group>"; };
+		A8FC42577FD1C39E461BA28E /* Pods--Swizzling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods--Swizzling.release.xcconfig"; path = "Pods/Target Support Files/Pods--Swizzling/Pods--Swizzling.release.xcconfig"; sourceTree = "<group>"; };
+		F8E7A1327453F21AB26A1F43 /* libPods--Swizzling.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods--Swizzling.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AE19051E40F73B00EE3DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB25111DC8B5ADBD3E850DE /* libPods--Swizzling.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AE18FF1E40F73B00EE3DC5 = {
+			isa = PBXGroup;
+			children = (
+				18AE190A1E40F73B00EE3DC5 /* Swizzling */,
+				18AE19091E40F73B00EE3DC5 /* Products */,
+				3CCD910EE03C4C080841133E /* Pods */,
+				C8A4A6E8F0EC253E9D22AEAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18AE19091E40F73B00EE3DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AE19081E40F73B00EE3DC5 /* Swizzling.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AE190A1E40F73B00EE3DC5 /* Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				18AE190E1E40F73B00EE3DC5 /* AppDelegate.h */,
+				18AE190F1E40F73B00EE3DC5 /* AppDelegate.m */,
+				18AE19111E40F73B00EE3DC5 /* ViewController.h */,
+				18AE19121E40F73B00EE3DC5 /* ViewController.m */,
+				18AE19221E40F99B00EE3DC5 /* ViewController+Swizzling.h */,
+				18AE19231E40F99B00EE3DC5 /* ViewController+Swizzling.m */,
+				18AE19141E40F73B00EE3DC5 /* Main.storyboard */,
+				18AE19171E40F73B00EE3DC5 /* Assets.xcassets */,
+				18AE19191E40F73B00EE3DC5 /* LaunchScreen.storyboard */,
+				18AE191C1E40F73B00EE3DC5 /* Info.plist */,
+				18AE190B1E40F73B00EE3DC5 /* Supporting Files */,
+			);
+			path = Swizzling;
+			sourceTree = "<group>";
+		};
+		18AE190B1E40F73B00EE3DC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18AE190C1E40F73B00EE3DC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3CCD910EE03C4C080841133E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9670C99D51A63DCD783490C7 /* Pods--Swizzling.debug.xcconfig */,
+				A8FC42577FD1C39E461BA28E /* Pods--Swizzling.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8A4A6E8F0EC253E9D22AEAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8E7A1327453F21AB26A1F43 /* libPods--Swizzling.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18AE19071E40F73B00EE3DC5 /* Swizzling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AE191F1E40F73B00EE3DC5 /* Build configuration list for PBXNativeTarget "Swizzling" */;
+			buildPhases = (
+				8EE3EB6E73DBB357004F363D /* [CP] Check Pods Manifest.lock */,
+				18AE19041E40F73B00EE3DC5 /* Sources */,
+				18AE19051E40F73B00EE3DC5 /* Frameworks */,
+				18AE19061E40F73B00EE3DC5 /* Resources */,
+				5DE12BFB74073FFC91D7164C /* [CP] Embed Pods Frameworks */,
+				144F09FC426D29BC4CBB3ED9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swizzling;
+			productName = Swizzling;
+			productReference = 18AE19081E40F73B00EE3DC5 /* Swizzling.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AE19001E40F73B00EE3DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wyl;
+				TargetAttributes = {
+					18AE19071E40F73B00EE3DC5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = HS686A3WXM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 18AE19031E40F73B00EE3DC5 /* Build configuration list for PBXProject "Swizzling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18AE18FF1E40F73B00EE3DC5;
+			productRefGroup = 18AE19091E40F73B00EE3DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18AE19071E40F73B00EE3DC5 /* Swizzling */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AE19061E40F73B00EE3DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE191B1E40F73B00EE3DC5 /* LaunchScreen.storyboard in Resources */,
+				18AE19181E40F73B00EE3DC5 /* Assets.xcassets in Resources */,
+				18AE19161E40F73B00EE3DC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		144F09FC426D29BC4CBB3ED9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods--Swizzling/Pods--Swizzling-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DE12BFB74073FFC91D7164C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods--Swizzling/Pods--Swizzling-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE3EB6E73DBB357004F363D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AE19041E40F73B00EE3DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE19241E40F99B00EE3DC5 /* ViewController+Swizzling.m in Sources */,
+				18AE19131E40F73B00EE3DC5 /* ViewController.m in Sources */,
+				18AE19101E40F73B00EE3DC5 /* AppDelegate.m in Sources */,
+				18AE190D1E40F73B00EE3DC5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18AE19141E40F73B00EE3DC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AE19151E40F73B00EE3DC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18AE19191E40F73B00EE3DC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AE191A1E40F73B00EE3DC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18AE191D1E40F73B00EE3DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		18AE191E1E40F73B00EE3DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18AE19201E40F73B00EE3DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9670C99D51A63DCD783490C7 /* Pods--Swizzling.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HS686A3WXM;
+				INFOPLIST_FILE = Swizzling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swizzling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18AE19211E40F73B00EE3DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8FC42577FD1C39E461BA28E /* Pods--Swizzling.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HS686A3WXM;
+				INFOPLIST_FILE = Swizzling/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Swizzling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AE19031E40F73B00EE3DC5 /* Build configuration list for PBXProject "Swizzling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AE191D1E40F73B00EE3DC5 /* Debug */,
+				18AE191E1E40F73B00EE3DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AE191F1E40F73B00EE3DC5 /* Build configuration list for PBXNativeTarget "Swizzling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AE19201E40F73B00EE3DC5 /* Debug */,
+				18AE19211E40F73B00EE3DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AE19001E40F73B00EE3DC5 /* Project object */;
+}
